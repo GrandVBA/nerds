@@ -11,7 +11,7 @@
 	    <ul class="site-navigation">
 		    <li><a href="#">Студия</a></li>
 		    <li><a href="#">Клиенты</a></li>
-		    <li class="site-navigation-current"><a href="#">Магазин</a></li>
+		    <li class="site-navigation-current">Магазин</li>
 		    <li><a href="#">Контакты</a></li>
 		  </ul>
 		  <ul class="basket-navigation">
@@ -23,16 +23,76 @@
 	  <h1>Магазин готовых шаблонов</h1>
 	  <section class="filters">
 	    <h2 class="visually-hidden">Фильтр шаблонов</h2>
-		  <!--Здесь будет форма--->
+		  <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="filters-cost">
+          <legend>Стоимость:</legend>
+          <p>
+            <input class="filters-cost-range" type="range" name="min" min="0" max="22900" step="100" value="0">
+            <input class="filters-cost-range" type="range" name="max" min="500" max="23000" step="100" value="15000">
+          </p>
+          <p>
+            <label for="cost-min">От</label>
+            <input class="filters-cost-value" id="cost-min" type="text" name="range-cost-min" value="0" disabled>
+          </p>
+          <p>
+            <label for="cost-max">До</label>
+            <input class="filters-cost-value" id="cost-max" type="text" name="range-cost-max" value="15000" disabled>
+          </p>
+        </fieldset>
+        <fieldset class="filters-grid">
+          <legend>Сетка:</legend>
+          <ul class="filters-grid-group">
+            <li>
+              <input type="radio" id="adaptive-gird" name="grid" value="adaptive" checked>
+              <label for="adaptive-gird">Адаптивная</label>
+            </li>
+            <li>
+              <input type="radio" id="fixed-gird" name="grid" value="fixed">
+              <label for="fixed-gird">Фиксированная</label>
+            </li>
+            <li>
+              <input type="radio" id="rubber-gird" name="grid" value="rubber">
+              <label for="rubber-gird">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="productfeatures">
+          <legend>Особенности:</legend>
+          <ul class="productfeatures-group">
+            <li>
+              <input type="checkbox" id="slider-label" name="slider" checked>
+              <label for="slider-label">Слайдер</label>
+            </li>
+            <li>
+              <input type="checkbox" id="advantage-block-label" name="advantage block">
+              <label for="advantage-block-label">Блок приемуществ</label>
+            </li>
+            <li>
+              <input type="checkbox" id="news-label" name="news" checked>
+              <label for="news-label">Новости</label>
+            </li>
+            <li>
+              <input type="checkbox" id="gallery-label" name="gallery">
+              <label for="gallery-label">Галерея</label>
+            </li>
+            <li>
+              <input type="checkbox" id="basket-label" name="basket">
+              <label for="basket-label">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button form-button" type="submit">Показать</button>
+      </form>
 	  </section>
 	  <section class="product">
-	    <h2 class="visually-hidden">Список шаблонов</h2>
+      <h2 class="visually-hidden">Шаблоны</h2>
 		  <h3>Сортировать:</h3>
 		  <ul class="product-sorting">
 		    <li class="product-sorting-current">По цене</li>
 		    <li><a href="#">По типу</a></li>
 		    <li><a href="#">По названию</a></li>
 		  </ul>
+      <h3 class="visually-hidden">Список шаблонов</h3>
 		  <ul class="product-list">
 		    <li>
 		      <h3>
@@ -116,10 +176,24 @@
 
   	<!--Модальные блоки-->
 
-  	<section class="modal-message">
+    <section class="modal-message">
   	  <h2>Напишите нам</h2>
-  	  <!--Тут будет форма-->
-  	  <span class="close-modal">x</span>
+      <form class="form-message" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="form-name">Ваше имя:</label>
+  	      <input class="form-item form-item-name" id="form-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="form-email">Ваше e-mail:</label>
+  	      <input class="form-item form-item-email" id="form-email" type="text" name="e-mail" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="form-textmessage">Текст письма:</label>
+  	      <input class="form-item form-item-textmessage" id="form-textmessage" type="text" name="message" placeholder="В свободной форме">
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
   	</section>
 
   </body>
