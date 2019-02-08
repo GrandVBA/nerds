@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
 	  <title>Nёrd's</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
 	  <nav class="main-navigation">
-	    <a href="#"><img src="#" width="60" height="120" alt="Логотип Нёрдс"></a>
+	    <a class="logo-in-catalog" href="#"><img src="image/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс"></a>
 	    <ul class="site-navigation">
 		    <li><a href="#">Студия</a></li>
 		    <li><a href="#">Клиенты</a></li>
@@ -20,7 +23,7 @@
 	  </nav>
     </header>
 	<main class="container">
-	  <h1>Магазин готовых шаблонов</h1>
+	  <h1 class="head">Магазин готовых шаблонов</h1>
 	  <section class="filters">
 	    <h2 class="visually-hidden">Фильтр шаблонов</h2>
 		  <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
@@ -43,15 +46,15 @@
           <legend>Сетка:</legend>
           <ul class="filters-grid-group">
             <li>
-              <input type="radio" id="adaptive-gird" name="grid" value="adaptive" checked>
+              <input class="filters-input" type="radio" id="adaptive-gird" name="grid" value="adaptive" checked>
               <label for="adaptive-gird">Адаптивная</label>
             </li>
             <li>
-              <input type="radio" id="fixed-gird" name="grid" value="fixed">
+              <input class="filters-input" type="radio" id="fixed-gird" name="grid" value="fixed">
               <label for="fixed-gird">Фиксированная</label>
             </li>
             <li>
-              <input type="radio" id="rubber-gird" name="grid" value="rubber">
+              <input class="filters-input" type="radio" id="rubber-gird" name="grid" value="rubber">
               <label for="rubber-gird">Резиновая</label>
             </li>
           </ul>
@@ -60,23 +63,23 @@
           <legend>Особенности:</legend>
           <ul class="productfeatures-group">
             <li>
-              <input type="checkbox" id="slider-label" name="slider" checked>
+              <input class="filters-input" type="checkbox" id="slider-label" name="slider" checked>
               <label for="slider-label">Слайдер</label>
             </li>
             <li>
-              <input type="checkbox" id="advantage-block-label" name="advantage block">
+              <input class="filters-input" type="checkbox" id="advantage-block-label" name="advantage block">
               <label for="advantage-block-label">Блок приемуществ</label>
             </li>
             <li>
-              <input type="checkbox" id="news-label" name="news" checked>
+              <input class="filters-input" type="checkbox" id="news-label" name="news" checked>
               <label for="news-label">Новости</label>
             </li>
             <li>
-              <input type="checkbox" id="gallery-label" name="gallery">
+              <input class="filters-input" type="checkbox" id="gallery-label" name="gallery">
               <label for="gallery-label">Галерея</label>
             </li>
             <li>
-              <input type="checkbox" id="basket-label" name="basket">
+              <input class="filters-input" type="checkbox" id="basket-label" name="basket">
               <label for="basket-label">Корзина</label>
             </li>
           </ul>
@@ -84,67 +87,79 @@
         <button class="button form-button" type="submit">Показать</button>
       </form>
 	  </section>
-	  <section class="product">
+	  <section class="catalog">
       <h2 class="visually-hidden">Шаблоны</h2>
 		  <h3>Сортировать:</h3>
-		  <ul class="product-sorting">
-		    <li class="product-sorting-current">По цене</li>
+		  <ul class="catalog-sorting">
+		    <li class="catalog-sorting-current">По цене</li>
 		    <li><a href="#">По типу</a></li>
 		    <li><a href="#">По названию</a></li>
 		  </ul>
       <h3 class="visually-hidden">Список шаблонов</h3>
-		  <ul class="product-list">
+		  <ul class="catalog-list">
 		    <li>
-		      <h3>
-			      <a href="#">SEDONA</a>
-			    </h3>
-			    <p>Информационный сайт для туристов</p>
-		      <img src="#" width="100" height="50" alt="sedona">
-			    <a class="button" href="#">9 900р</a>
+          <img src="image/img-sedona.jpg" width="360" height="576" alt="sedona">
+          <div class="maket-description">
+		        <h3>
+			        <a class="name-maket" href="#">SEDONA</a>
+			      </h3>
+			      <p>Информационный сайт для туристов</p>
+            <a class="button button-cost" href="#">9 900р</a>
+          </div>
 		    </li>
 		    <li>
-		      <h3>
-			      <a href="#">PINK APP</a>
-			    </h3>
-			    <p>Продуктовый лендинг приложения для iOS и Android</p>
-		      <img src="#" width="100" height="50" alt="pink-app">
-			    <a class="button" href="#">9 900р</a>
+          <img src="image/img-pink.jpg" width="360" height="576" alt="pink-app">
+          <div class="maket-description">
+		        <h3>
+			        <a class="name-maket" href="#">PINK APP</a>
+			      </h3>
+			      <p>Продуктовый лендинг приложения для iOS и Android</p>
+			      <a class="button button-cost" href="#">9 900р</a>
+          </div>
 		    </li>
 		    <li>
-		      <h3>
-			      <a href="#">BARBERSHOP</a>
-			    </h3>
-			    <p>Сайт салоны красоты. Для мужчин, да.</p>
-		      <img src="#" width="100" height="50" alt="barbershop">
-			    <a class="button" href="#">9 900р</a>
+          <img src="image/img-barbershop.jpg" width="360" height="576" alt="barbershop">
+          <div class="maket-description">
+		        <h3>
+			        <a class="name-maket" href="#">BARBERSHOP</a>
+			      </h3>
+			      <p>Сайт салоны красоты. Для мужчин, да.</p>
+			      <a class="button button-cost" href="#">9 900р</a>
+          </div>
 		    </li>
 		    <li>
-		      <h3>
-			      <a href="#">MISHKA</a>
-			    </h3>
-			    <p>Интернет магазин взяанных игрушек</p>
-		      <img src="#" width="100" height="50" alt="mishka">
-			    <a class="button" href="#">9 900р</a>
+          <img src="image/img-mishka.jpg" width="360" height="576" alt="mishka">
+          <div class="maket-description">
+		        <h3>
+			        <a class="name-maket" href="#">MISHKA</a>
+			      </h3>
+			      <p>Интернет магазин взяанных игрушек</p>
+			      <a class="button button-cost" href="#">9 900р</a>
+          </div>
 		    </li>
 		    <li>
-		      <h3>
-			      <a href="#">A PLUS</a>
-			    </h3>
-			    <p>Лендинг курсов повышения квалификации.</p>
-		      <img src="#" width="100" height="50" alt="a-plus">
-			    <a class="button" href="#">9 900р</a>
+          <img src="image/img-aplus.jpg" width="360" height="576" alt="a-plus">
+          <div class="maket-description">
+		        <h3>
+			        <a class="name-maket" href="#">A PLUS</a>
+			      </h3>
+			      <p>Лендинг курсов повышения квалификации.</p>
+			      <a class="button button-cost" href="#">9 900р</a>
+          </div>
 		    </li>
 		    <li>
-		      <h3>
-			      <a href="#">КВАСТ</a>
-			    </h3>
-			    <p>Промо-сайт производителя крафтового кваса</p>
-		      <img src="#" width="100" height="50" alt="kvast">
-			    <a class="button" href="#">9 900р</a>
+          <img src="image/img-kvast.jpg" width="360" height="576" alt="kvast">
+          <div class="maket-description">
+		        <h3>
+			        <a class="name-maket" href="#">КВАСТ</a>
+			      </h3>
+			      <p>Промо-сайт производителя крафтового кваса</p>
+			      <a class="button button-cost" href="#">9 900р</a>
+          </div>
 		    </li>
 		  </ul>
 		  <ul class="pagination-list">
-		    <li class="pagination-item pagination-item-current">1</li>
+		    <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
 		    <li class="pagination-item"><a href="#">2</a></li>
 		    <li class="pagination-item"><a href="#">3</a></li>
 		    <li class="pagination-item"><a href="#">Следующая</a></li>
@@ -185,7 +200,7 @@
         </p>
         <p>
           <label for="form-email">Ваше e-mail:</label>
-  	      <input class="form-item form-item-email" id="form-email" type="text" name="e-mail" placeholder="email@example.com">
+  	      <input class="form-item form-item-email" id="form-email" type="email" name="e-mail" placeholder="email@example.com">
         </p>
         <p>
           <label for="form-textmessage">Текст письма:</label>

@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
 	  <title>Nёrd's</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
 	  <nav class="main-navigation">
-	    <a href="#"><img src="#" width="60" height="120" alt="Логотип Нёрдс"></a>
+	    <img src="image/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
 	    <ul class="site-navigation">
 		    <li><a href="#">Студия</a></li>
 		    <li><a href="#">Клиенты</a></li>
@@ -23,28 +26,28 @@
 	  <h1 class="visually-hidden">Nёrd's</h1>
 
     <!--Слайдер, подумать как сделать (заметка оставленна 20.01.2018)-->
-    <section class="slider">
-	    <figure class="slider1">
-	      <img src="#" width="100" height="50" alt="Телефоны">
+    <ul class="slider">
+	    <li class="slider1">
+	      <img src="image/slide1.png" width="698" height="413" alt="Телефоны">
 		    <h2>Долго, дорого, скрупудёзно</h2>
 		    <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
 		    <a class="button" href="#">Узнать больше</a>
-	    </figure>
-	    <figure class="slider2">
-	      <img src="#" width="100" height="50" alt="Моноблок">
+	    </li>
+	    <li class="slider2">
+	      <img src="image/slide2.png" width="663" height="430" alt="Моноблок">
 		    <h2>Любим математику как никто другой</h2>
 		    <p>Никакого креатива, только математические формулы для расчёта идеальных пропорций</p>
 		    <a class="button" href="#">Узнать больше</a>
-	    </figure>
-	    <figure class="slider3">
-	      <img src="#" width="100" height="50" alt="Планшет">
+	    </li>
+	    <li class="slider3">
+	      <img src="image/slide3.png" width="759" height="411" alt="Планшет">
 		    <h2>Только ночь, только хардкор</h2>
 		    <p>Работать днём, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
 		    <a class="button" href="#">Узнать больше</a>
-	    </figure>
+	    </li>
       <button class="slider-button-back" type="button">Назад</button>
       <button class="slider-button-next" type="button">Вперёд</button>
-    </section>
+    </ul>
     <!---Конец слайдера-->
 
 	  <section class="product">
@@ -53,20 +56,20 @@
 		    <li>
 		      <h3>ВЕБ-САЙТЫ</h3>
 			    <p>Мир никогда не будет прежним после того как увидит наш сайт!</p>
-			    <img src="#" width="100" height="50" alt="Вебсайт">
+			    <img src="image/illustration-1.png" width="300" height="146" alt="Вебсайт">
 			    <a class="button" href="#">ЗАКАЗАТЬ</a>
         </li>
 		    <li>
 		      <h3>ПРИЛОЖЕНИЯ</h3>
 			    <p>Покорите ТОП-10 приложений в AppStore и Google Play</p>
-			    <img src="#" width="100" height="50" alt="Приложение">
-			    <a class="button" href="#">ЗАКАЗАТЬ</a>
+			    <img src="image/illustration-2.png" width="300" height="146" alt="Приложение">
+			    <a class="green-button" href="#">ЗАКАЗАТЬ</a>
 		    </li>
 		    <li>
 		      <h3>ПРЕЗЕНТАЦИИ</h3>
 			    <p>Вы даже не подозреваете, на сколько вы изумительны!</p>
-			    <img src="#" width="100" height="50" alt="Презентации">
-			    <a class="button" href="#">ЗАКАЗАТЬ</a>
+			    <img src="image/illustration-3.png" width="300" height="146" alt="Презентации">
+			    <a class="yellow-button" href="#">ЗАКАЗАТЬ</a>
 		    </li>
 		  </ul>
 	  </section>
@@ -81,20 +84,28 @@
 		  </ul>
 	  </section>
 	  <section class="history">
+      <img src="image/nerds-illustration.png" width="360" height="208" alt="Иллюстрация">
 		  <h2>C 2004 года любим точность во всём:</h2>
-	    <ul class="history-list">
-		    <li><span class="history-list-percent">146<sup>%</sup></span> уровень самоотдачи</li>
-		    <li><span class="history-list-percent">100<sup>%</sup></span> соблюдение сроков</li>
-		    <li><span class="history-list-percent">50<sup>%</sup></span> минимальная предоплата</li>
-		  </ul>
+	    <table class="history-list">
+        <tr>
+		      <td class="history-list-percent">146%</td>
+          <td class="history-list-percent">100%</td>
+		      <td class="history-list-percent">50%</td>
+        </tr>
+        <tr>
+          <td class="history-list-description">Уровень самоотдачи</td>
+          <td class="history-list-description">Соблюдение сроков</td>
+          <td class="history-list-description">Минимальная предоплата</td>
+        </tr>
+		  </table>
 	  </section>
 	  <section class="partners">
 	    <h2 class="visually-hidden">Партнёры</h2>
 		  <ul class="partners-list">
-		    <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" width="100" height="50" alt="HTML Academy"></a></li>
-		    <li><a href="#"><img src="#" width="100" height="50" alt="Барбершоп Бородинский"></a></li>
-		    <li><a href="#"><img src="#" width="100" height="50" alt="PINK"></a></li>
-		    <li><a href="#"><img src="#" width="100" height="50" alt="MISHKA"></a></li>
+		    <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="image/logo-1.png" width="199" height="68" alt="HTML Academy"></a></li>
+		    <li><a href="#"><img src="image/logo-2.png" width="209" height="90" alt="Барбершоп Бородинский"></a></li>
+		    <li><a href="#"><img src="image/logo-3.png" width="185" height="52" alt="PINK"></a></li>
+		    <li><a href="#"><img src="image/logo-4.png" width="173" height="84" alt="MISHKA"></a></li>
 		  </ul>
 	  </section>
 	</main>
@@ -111,8 +122,8 @@
 		  тел. +7 (812) 275-75-75
 		</p>
 		<button class="button" type="button">Напишите нам</button>
-		<img src="#" width="100" height="50" alt="Карта">
-	  </section>
+    </section>
+		<img src="image/maps.jpg" width="1440" height="416" alt="Карта">
 	  <div class="footer-social">
 	    <ul class="footer-social-list">
 		  <li><a class="social-button" href="#">Вконтакте</a></li>
