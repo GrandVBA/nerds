@@ -9,8 +9,8 @@
   </head>
   <body>
     <header class="main-header">
-	  <nav class="main-navigation">
-	    <img src="image/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
+	  <nav class="main-navigation container">
+	    <a class="logo-in-catalog" href="#"><img src="image/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс"></a>
 	    <ul class="site-navigation">
 		    <li><a href="#">Студия</a></li>
 		    <li><a href="#">Клиенты</a></li>
@@ -21,12 +21,7 @@
 		    <li><a href="#">Корзина</a></li>
 		  </ul>
 	  </nav>
-    </header>
-	<main class="container">
-	  <h1 class="visually-hidden">Nёrd's</h1>
-
-    <!--Слайдер, подумать как сделать (заметка оставленна 20.01.2018)-->
-    <ul class="slider">
+    <ul class="slider container">
 	    <li class="slider1">
 	      <img src="image/slide1.png" width="698" height="413" alt="Телефоны">
 		    <h2>Долго, дорого, скрупудёзно</h2>
@@ -48,10 +43,16 @@
       <button class="slider-button-back" type="button">Назад</button>
       <button class="slider-button-next" type="button">Вперёд</button>
     </ul>
+    </header>
+	<main class="container">
+	  <!--<h1 class="visually-hidden">Nёrd's</h1>--->
+
+    <!--Слайдер, подумать как сделать (заметка оставленна 20.01.2018)-->
+
     <!---Конец слайдера-->
 
 	  <section class="product">
-	    <h2 class="visually-hidden">Продукты</h2>
+	    <!--<h2 class="visually-hidden">Продукты</h2>-->
 	    <ul class="product-list">
 		    <li>
 		      <h3>ВЕБ-САЙТЫ</h3>
@@ -73,6 +74,7 @@
 		    </li>
 		  </ul>
 	  </section>
+    <div class="index-colums">
 	  <section class="description">
 		  <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
 		  <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -99,8 +101,9 @@
         </tr>
 		  </table>
 	  </section>
+  </div>
 	  <section class="partners">
-	    <h2 class="visually-hidden">Партнёры</h2>
+	    <!--<h2 class="visually-hidden">Партнёры</h2>-->
 		  <ul class="partners-list">
 		    <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="image/logo-1.png" width="199" height="68" alt="HTML Academy"></a></li>
 		    <li><a href="#"><img src="image/logo-2.png" width="209" height="90" alt="Барбершоп Бородинский"></a></li>
@@ -111,8 +114,8 @@
 	</main>
 
 	<footer class="main-footer">
-	  <h2>Давайте дружить, это выгодно!</h2>
-	  <p>Скидка 10% для друзей из социальных сетей.</p>
+    <img src="image/maps.jpg" width="1440" height="416" alt="Карта">
+    <div class="container">
 	  <section class="footer-address">
 	    <h3>NЁRDS DESGIN STUDIO</h3>
 	    <p>
@@ -122,15 +125,19 @@
 		  тел. +7 (812) 275-75-75
 		</p>
 		<button class="button" type="button">Напишите нам</button>
-    </section>
-		<img src="image/maps.jpg" width="1440" height="416" alt="Карта">
-	  <div class="footer-social">
+  </section>
+    <div class="footer-social">
 	    <ul class="footer-social-list">
-		  <li><a class="social-button" href="#">Вконтакте</a></li>
-		  <li><a class="social-button" href="#">Фейсбук</a></li>
-		  <li><a class="social-button" href="#">Инстаграм</a></li>
-		</ul>
-	  </div>
+		    <li><a class="social-button" href="#">Вконтакте</a></li>
+		    <li><a class="social-button" href="#">Фейсбук</a></li>
+		    <li><a class="social-button" href="#">Инстаграм</a></li>
+		  </ul>
+      <section class="footer-textmessage">
+        <h2>Давайте дружить, это выгодно!</h2>
+	      <p>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+	   </div>
+    </div>
 	</footer>
 
 	<!--Модальные блоки-->
