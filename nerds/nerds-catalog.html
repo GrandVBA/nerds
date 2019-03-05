@@ -9,6 +9,7 @@
   </head>
   <body>
     <header class="main-header">
+    <div class="container">
 	  <nav class="main-navigation">
 	    <a class="logo-in-catalog" href="#"><img src="image/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс"></a>
 	    <ul class="site-navigation">
@@ -22,11 +23,13 @@
 		  </ul>
 	  </nav>
     <h1 class="head">Магазин готовых шаблонов</h1>
+  </div>
     </header>
-	<main class="container">
 
+	<main class="container">
+    <div class="catalog-colums">
 	  <section class="filters">
-	    <h2 class="visually-hidden">Фильтр шаблонов</h2>
+	    <!--<h2 class="visually-hidden">Фильтр шаблонов</h2>-->
 		  <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="filters-cost">
           <legend>Стоимость:</legend>
@@ -89,74 +92,76 @@
       </form>
 	  </section>
 	  <section class="catalog">
-      <h2 class="visually-hidden">Шаблоны</h2>
+      <!--<h2 class="visually-hidden">Шаблоны</h2>-->
+     <div class="catalog-navigation">
 		  <h3>Сортировать:</h3>
 		  <ul class="catalog-sorting">
 		    <li class="catalog-sorting-current">По цене</li>
 		    <li><a href="#">По типу</a></li>
 		    <li><a href="#">По названию</a></li>
 		  </ul>
-      <h3 class="visually-hidden">Список шаблонов</h3>
+    </div>
+      <!--<h3 class="visually-hidden">Список шаблонов</h3>-->
 		  <ul class="catalog-list">
 		    <li>
           <img src="image/img-sedona.jpg" width="360" height="576" alt="sedona">
-          <div class="maket-description">
+          <!--<div class="maket-description">
 		        <h3>
 			        <a class="name-maket" href="#">SEDONA</a>
 			      </h3>
 			      <p>Информационный сайт для туристов</p>
             <a class="button button-cost" href="#">9 900р</a>
-          </div>
+          </div>-->
 		    </li>
 		    <li>
           <img src="image/img-pink.jpg" width="360" height="576" alt="pink-app">
-          <div class="maket-description">
+          <!--<div class="maket-description">
 		        <h3>
 			        <a class="name-maket" href="#">PINK APP</a>
 			      </h3>
 			      <p>Продуктовый лендинг приложения для iOS и Android</p>
 			      <a class="button button-cost" href="#">9 900р</a>
-          </div>
+          </div>-->
 		    </li>
 		    <li>
           <img src="image/img-barbershop.jpg" width="360" height="576" alt="barbershop">
-          <div class="maket-description">
+          <!--<div class="maket-description">
 		        <h3>
 			        <a class="name-maket" href="#">BARBERSHOP</a>
 			      </h3>
 			      <p>Сайт салоны красоты. Для мужчин, да.</p>
 			      <a class="button button-cost" href="#">9 900р</a>
-          </div>
+          </div>-->
 		    </li>
 		    <li>
           <img src="image/img-mishka.jpg" width="360" height="576" alt="mishka">
-          <div class="maket-description">
+          <!--<div class="maket-description">
 		        <h3>
 			        <a class="name-maket" href="#">MISHKA</a>
 			      </h3>
 			      <p>Интернет магазин взяанных игрушек</p>
 			      <a class="button button-cost" href="#">9 900р</a>
-          </div>
+          </div>-->
 		    </li>
 		    <li>
           <img src="image/img-aplus.jpg" width="360" height="576" alt="a-plus">
-          <div class="maket-description">
+          <!--<div class="maket-description">
 		        <h3>
 			        <a class="name-maket" href="#">A PLUS</a>
 			      </h3>
 			      <p>Лендинг курсов повышения квалификации.</p>
 			      <a class="button button-cost" href="#">9 900р</a>
-          </div>
+          </div>-->
 		    </li>
 		    <li>
           <img src="image/img-kvast.jpg" width="360" height="576" alt="kvast">
-          <div class="maket-description">
+          <!--<div class="maket-description">
 		        <h3>
 			        <a class="name-maket" href="#">КВАСТ</a>
 			      </h3>
 			      <p>Промо-сайт производителя крафтового кваса</p>
 			      <a class="button button-cost" href="#">9 900р</a>
-          </div>
+          </div>-->
 		    </li>
 		  </ul>
 		  <ul class="pagination-list">
@@ -166,10 +171,11 @@
 		    <li class="pagination-item"><a href="#">Следующая</a></li>
 		  </ul>
 	  </section>
+  </div>
 	</main>
-	<footer class="main-footer">
-	  <h2>Давайте дружить, это выгодно!</h2>
-	  <p>Скидка 10% для друзей из социальных сетей.</p>
+  <footer class="main-footer">
+    <img src="image/maps.jpg" width="1440" height="416" alt="Карта">
+    <div class="container">
 	  <section class="footer-address">
 	    <h3>NЁRDS DESGIN STUDIO</h3>
 	    <p>
@@ -178,16 +184,20 @@
 		  <br>
 		  тел. +7 (812) 275-75-75
 		</p>
-		<a class="button" href="#">Напишите нам</a>
-		<img src="#" width="100" height="50" alt="Карта">
-	  </section>
-	  <div class="footer-social">
+		<button class="button" type="button">Напишите нам</button>
+  </section>
+    <div class="footer-social">
 	    <ul class="footer-social-list">
-		  <li><a class="social-button" href="#">Вконтакте</a></li>
-		  <li><a class="social-button" href="#">Фейсбук</a></li>
-		  <li><a class="social-button" href="#">Инстаграм</a></li>
-		</ul>
-	  </div>
+		    <li><a class="social-button" href="#">Вконтакте</a></li>
+		    <li><a class="social-button" href="#">Фейсбук</a></li>
+		    <li><a class="social-button" href="#">Инстаграм</a></li>
+		  </ul>
+      <section class="footer-textmessage">
+        <h2>Давайте дружить, это выгодно!</h2>
+	      <p>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+	   </div>
+    </div>
 	</footer>
 
   	<!--Модальные блоки-->
