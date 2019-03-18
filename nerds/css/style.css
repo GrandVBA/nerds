@@ -31,12 +31,17 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   margin-bottom: 80px;
 }
+
+
 
 .logo-in-catalog {
   height: 65px;
   width: 160px;
+
+  margin-right: 200px;
 }
 
 .logo-in-catalog:hover,
@@ -54,17 +59,69 @@ a {
 }
 
 .site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
   margin: 0;
   padding: 0;
   width: 660px;
   min-height: 50px;
 }
 
+
+.site-navigation a {
+  display: block;
+  padding: 16px 0px;
+  margin: 0 25px;
+  margin-top: 15px;
+
+}
+
 .basket-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+
   margin: 0;
   padding: 0;
   width: 180px;
   min-height: 50px;
+}
+
+
+
+.basket-navigation a {
+  position: relative;
+
+  display: block;
+  padding: 16px 0px 16px 45px;
+  margin: 15px -20px 0 15px;
+}
+
+.basket-navigation a::before {
+  content: "";
+
+  position: absolute;
+
+  width: 20px;
+  height: 20px;
+
+  top: 23px;
+  left: 0px;
+
+  background-image: url(../image/cart-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3;
+}
+
+.logo-in-catalog,
+.site-navigation,
+.basket-navigation {
+  margin-top: 50px;
 }
 
 .site-navigation-current {
