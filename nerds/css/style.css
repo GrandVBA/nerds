@@ -109,8 +109,6 @@ input[type="radio"].visualy-hidden {
   min-height: 50px;
 }
 
-
-
 .basket-navigation a {
   position: relative;
 
@@ -144,11 +142,29 @@ input[type="radio"].visualy-hidden {
 }
 
 .site-navigation-current {
+  display: block;
+  position: relative;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
 
   text-transform: uppercase;
+}
+
+.site-navigation-current::after {
+  content: '';
+
+  position: absolute;
+
+  width: 75px;
+  height: 3px;
+
+  bottom: 0;
+  left: 25px;
+
+  background-image: url(../image/linered.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .site-navigation a,
@@ -170,6 +186,13 @@ input[type="radio"].visualy-hidden {
 .site-navigation a:active,
 .basket-navigation a:active {
   color: #a6a6a6
+}
+
+.site-navigation-current .disabled:hover,
+.site-navigation-current .disabled:focus,
+.site-navigation-current .disabled:active {
+  cursor: default;
+  color: #000000;
 }
 
 .slider {
@@ -235,7 +258,10 @@ input[type="radio"].visualy-hidden {
   font-weight: 500;
   text-align: center;
   vertical-align: middle;
-  padding-bottom: 110px;
+  padding-bottom: 100px;
+  padding-top: 60px;
+
+  margin: 0;
   margin-bottom: 60px;
   background-color: #eeeeee;
 }
@@ -243,6 +269,10 @@ input[type="radio"].visualy-hidden {
 .filters {
   min-height: 780px;
   width: 260px;
+
+  margin: 0;
+  margin-top: -5px;
+  padding: 0;
 }
 
 .filters-form legend {
@@ -250,6 +280,9 @@ input[type="radio"].visualy-hidden {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+
+  margin: 0;
+  padding: 0;
 }
 
 .filters-form fieldset {
@@ -340,13 +373,25 @@ input[type="radio"].visualy-hidden {
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
+
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-sorting {
+  display: flex;
+  justify-content: space-between;
+
+  width: 280px;
+
   list-style: none;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  margin: 0;
+  padding: 0;
+  margin-left: 200px;
 }
 
 .catalog-sorting a {
@@ -365,6 +410,51 @@ input[type="radio"].visualy-hidden {
 .catalog-sorting a:active {
   color: #000000;
 
+  opacity: 1;
+}
+
+.catalog-arrows {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-arrows a {
+  position: relative;
+
+  display: block;
+}
+
+.catalog-arrows a::before {
+  content: '';
+
+  position: absolute;
+
+  top: -6px;
+  right: 0px;
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url(../image/icon-up-dir.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.2;
+}
+
+.catalog-arrows .button-arrows-down {
+  top: -2px;
+  right: 45px;
+  transform: rotate(180deg);
+}
+
+.catalog-arrows a:hover::before,
+.catalog-arrows a:focus::before {
+  opacity: 0.5;
+}
+
+.catalog-arrows a:active::before {
   opacity: 1;
 }
 
