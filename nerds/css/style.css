@@ -292,6 +292,32 @@ input[type="radio"].visualy-hidden {
 .filters-cost {
   margin: 0;
   padding: 0;
+  margin-bottom: 55px;
+}
+
+.filters-cost legend {
+  margin-bottom: 50px;
+}
+
+.filters-cost .filters-range {
+  display: block;
+  position: relative;
+
+  width: 280px;
+  height: 80px;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: #eeeeee;
+}
+
+.filters-range .filters-cost-range {
+  position: absolute;
+  width: 230px;
+
+  top: 30px;
+  left: 23px;
 }
 
 .filters-cost-value {
@@ -300,6 +326,21 @@ input[type="radio"].visualy-hidden {
   border: none;
   text-align: center;
   vertical-align: middle;
+
+  width: 80px;
+  height: 40px;
+}
+
+.filters-cost-result label {
+  margin-right: 12px;
+  text-transform: uppercase;
+  line-height: 22px;
+  color: #283136
+}
+
+.filters-result-colums {
+  display: flex;
+  justify-content: space-between;
 }
 
 .filters-grid-group,
