@@ -15,9 +15,6 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-}
 
 /* Код, как правильно убирать элементы с .visualy-hidden (ниже)*/
 .visually-hidden:not(:focus):not(:active),
@@ -792,7 +789,7 @@ input[type="radio"].visualy-hidden {
   position: absolute;
 
   top: 55px;
-  left: 100px;
+  left: 140px;
 
   padding: 50px 50px;
 
