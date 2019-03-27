@@ -15,6 +15,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* Код, как правильно убирать элементы с .visualy-hidden (ниже)*/
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visualy-hidden,
@@ -788,7 +792,7 @@ input[type="radio"].visualy-hidden {
   position: absolute;
 
   top: 55px;
-  left: 140px;
+  left: 100px;
 
   padding: 50px 50px;
 
@@ -824,6 +828,7 @@ input[type="radio"].visualy-hidden {
 .footer-social {
   display: flex;
   align-items: center;
+
   margin-bottom: 75px;
 }
 
