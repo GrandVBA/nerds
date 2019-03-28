@@ -179,25 +179,27 @@
 
 	<!--Модальные блоки-->
 
-	<section class="modal-message">
-	  <h2>Напишите нам</h2>
+  <section class="modal">
+   <div class="modal-message">
+    <h2>Напишите нам</h2>
     <form class="form-message" action="https://echo.htmlacademy.ru" method="post">
       <p>
         <label for="form-name">Ваше имя:</label>
-	      <input class="form-item form-item-name" id="form-name" type="text" name="name" placeholder="Имя Фамилия">
+        <input class="form-item form-item-name" id="form-name" type="text" name="name" placeholder="Имя Фамилия">
       </p>
       <p>
         <label for="form-email">Ваше e-mail:</label>
-	      <input class="form-item form-item-email" id="form-email" type="text" name="e-mail" placeholder="email@example.com">
+        <input class="form-item form-item-email" id="form-email" type="email" name="e-mail" placeholder="email@example.com">
       </p>
       <p>
         <label for="form-textmessage">Текст письма:</label>
-	      <input class="form-item form-item-textmessage" id="form-textmessage" type="text" name="message" placeholder="В свободной форме">
+        <textarea class="form-item-textmessage" id="form-textmessage" name="message" placeholder="В свободной форме"></textarea>
       </p>
       <button class="button" type="submit">Отправить</button>
     </form>
     <button class="modal-close" type="button">Закрыть</button>
-	</section>
+  </div>
+  </section>
 
   </body>
 </html>

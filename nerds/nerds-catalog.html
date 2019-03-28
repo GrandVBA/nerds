@@ -59,7 +59,7 @@
               <label for="fixed-gird">Фиксированная</label>
             </li>
             <li>
-              <input class="filters-input" type="radio" id="rubber-gird" name="grid" value="rubber">
+              <input class="filters-input" type="radio" id="rubber-gird" name="grid" value="rubber" disabled>
               <label for="rubber-gird">Резиновая</label>
             </li>
           </ul>
@@ -84,7 +84,7 @@
               <label for="gallery-label">Галерея</label>
             </li>
             <li>
-              <input class="filters-input" type="checkbox" id="basket-label" name="basket">
+              <input class="filters-input" type="checkbox" id="basket-label" name="basket" checked disabled>
               <label for="basket-label">Корзина</label>
             </li>
           </ul>
@@ -110,70 +110,70 @@
 		  <ul class="catalog-list">
 		    <li>
           <img src="image/img-sedona.jpg" width="360" height="576" alt="sedona">
-          <!--<div class="maket-description">
+          <div class="maket-description">
 		        <h3>
 			        <a class="name-maket" href="#">SEDONA</a>
 			      </h3>
 			      <p>Информационный сайт для туристов</p>
             <a class="button button-cost" href="#">9 900р</a>
-          </div>-->
+          </div>
 		    </li>
 		    <li>
           <img src="image/img-pink.jpg" width="360" height="576" alt="pink-app">
-          <!--<div class="maket-description">
+          <div class="maket-description">
 		        <h3>
 			        <a class="name-maket" href="#">PINK APP</a>
 			      </h3>
 			      <p>Продуктовый лендинг приложения для iOS и Android</p>
 			      <a class="button button-cost" href="#">9 900р</a>
-          </div>-->
+          </div>
 		    </li>
 		    <li>
           <img src="image/img-barbershop.jpg" width="360" height="576" alt="barbershop">
-          <!--<div class="maket-description">
+          <div class="maket-description">
 		        <h3>
 			        <a class="name-maket" href="#">BARBERSHOP</a>
 			      </h3>
 			      <p>Сайт салоны красоты. Для мужчин, да.</p>
 			      <a class="button button-cost" href="#">9 900р</a>
-          </div>-->
+          </div>
 		    </li>
 		    <li>
           <img src="image/img-mishka.jpg" width="360" height="576" alt="mishka">
-          <!--<div class="maket-description">
+          <div class="maket-description">
 		        <h3>
 			        <a class="name-maket" href="#">MISHKA</a>
 			      </h3>
 			      <p>Интернет магазин взяанных игрушек</p>
 			      <a class="button button-cost" href="#">9 900р</a>
-          </div>-->
+          </div>
 		    </li>
 		    <li>
           <img src="image/img-aplus.jpg" width="360" height="576" alt="a-plus">
-          <!--<div class="maket-description">
+          <div class="maket-description">
 		        <h3>
 			        <a class="name-maket" href="#">A PLUS</a>
 			      </h3>
 			      <p>Лендинг курсов повышения квалификации.</p>
 			      <a class="button button-cost" href="#">9 900р</a>
-          </div>-->
+          </div>
 		    </li>
 		    <li>
           <img src="image/img-kvast.jpg" width="360" height="576" alt="kvast">
-          <!--<div class="maket-description">
+          <div class="maket-description">
 		        <h3>
 			        <a class="name-maket" href="#">КВАСТ</a>
 			      </h3>
 			      <p>Промо-сайт производителя крафтового кваса</p>
 			      <a class="button button-cost" href="#">9 900р</a>
-          </div>-->
+          </div>
 		    </li>
 		  </ul>
 		  <ul class="pagination-list">
 		    <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
 		    <li class="pagination-item"><a href="#">2</a></li>
 		    <li class="pagination-item"><a href="#">3</a></li>
-		    <li class="pagination-item"><a href="#">Следующая</a></li>
+		    <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
 		  </ul>
 	  </section>
   </div>
@@ -228,7 +228,8 @@
 
   	<!--Модальные блоки-->
 
-    <section class="modal-message">
+    <section class="modal">
+     <div class="modal-message">
   	  <h2>Напишите нам</h2>
       <form class="form-message" action="https://echo.htmlacademy.ru" method="post">
         <p>
@@ -241,11 +242,12 @@
         </p>
         <p>
           <label for="form-textmessage">Текст письма:</label>
-  	      <input class="form-item form-item-textmessage" id="form-textmessage" type="text" name="message" placeholder="В свободной форме">
+  	      <textarea class="form-item-textmessage" id="form-textmessage" name="message" placeholder="В свободной форме"></textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button">Закрыть</button>
+    </div>
   	</section>
 
   </body>
