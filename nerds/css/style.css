@@ -17,8 +17,8 @@ a {
 
 /*Пока что убрал, что бы влезла картинка в слайере*/
 img {
-  max-width: 100%;
-  height: auto;
+
+
 }
 
 /* Код, как правильно убирать элементы с .visualy-hidden (ниже)*/
@@ -206,6 +206,7 @@ input[type="radio"].visualy-hidden {
 }
 
 .slider {
+  display: flex;
   position: relative;
   list-style: none;
 
@@ -255,6 +256,10 @@ input[type="radio"].visualy-hidden {
   min-height: 272px;
 }
 
+.slider-image {
+  height: 411px;
+}
+
 .slider1,
 .slider2,
 .slider3 {
@@ -265,10 +270,10 @@ input[type="radio"].visualy-hidden {
 
 /*Тут нужно убрать .slider2 и .slider3, что бы слайдер заработал*/
 .slider3,
-.slider2 {
+.slider2,
+.slider1 {
   display: none;
 }
-
 
 .head {
   font-size: 55px;
@@ -1391,4 +1396,15 @@ input[type="radio"].visualy-hidden {
   background-image: url(../image/active-button.png);
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+@keyframes moveleft {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.slider-show {
+  display: flex;
+  animation-name: moveleft;
+  animation-duration: 1.3s;
 }
