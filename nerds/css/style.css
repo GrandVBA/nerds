@@ -15,11 +15,11 @@ a {
   text-decoration: none;
 }
 
+/*Пока что убрал, что бы влезла картинка в слайере*/
 img {
   max-width: 100%;
   height: auto;
 }
-
 
 /* Код, как правильно убирать элементы с .visualy-hidden (ниже)*/
 .visually-hidden:not(:focus):not(:active),
@@ -206,6 +206,7 @@ input[type="radio"].visualy-hidden {
 }
 
 .slider {
+  position: relative;
   list-style: none;
 
   background-color: #eeeeee;
@@ -263,6 +264,10 @@ input[type="radio"].visualy-hidden {
 }
 
 /*Тут нужно убрать .slider2 и .slider3, что бы слайдер заработал*/
+.slider3,
+.slider2 {
+  display: none;
+}
 
 
 .head {
@@ -1333,4 +1338,57 @@ input[type="radio"].visualy-hidden {
 .modal-error {
   animation-name: shake;
   animation-duration: 0.6s;
+}
+
+.slider-button-wrapper {
+  display: block;
+  position: absolute;
+  left: 530px;
+  bottom: 80px;
+}
+
+.slider-button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 85px;
+  height: 25px;
+}
+
+.slider-button-container input {
+  display: none;
+}
+
+.slider-button-container label {
+  position: relative;
+  cursor: pointer;
+}
+
+.slider-button-container label::before {
+  content: '';
+  position: absolute;
+
+  top: -20px;
+  left: 0;
+
+  width: 18px;
+  height: 18px;
+
+  background-image: url(../image/Shape1.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.slider-button-container input[type="radio"]:checked + .button-pick::before {
+  content: '';
+  position: absolute;
+
+  top: -15px;
+  left: 5px;
+
+  width: 8px;
+  height: 9px;
+
+  background-image: url(../image/active-button.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
